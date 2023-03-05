@@ -1,10 +1,10 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,17 +15,17 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 70px;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Menu {
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-end;
+}
+.MenuItem {
+  list-style: none;
+  padding: 5px;
+}
+.MenuItem a {
+  text-decoration: none;
+  color: #fff;
 }
